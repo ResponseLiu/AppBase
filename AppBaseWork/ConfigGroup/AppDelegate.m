@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "JCLTabBarList.h"
+#import "LoginViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -20,7 +21,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = JCLRGBA(255, 255, 255, 1);
     [self.window makeKeyAndVisible];
-    JCLTabBarList *main = [[JCLTabBarList alloc] init];
+    LoginViewController *main = [[LoginViewController alloc] init];
     self.window.rootViewController = main;
     if (@available(ios 11.0,*)) {
         

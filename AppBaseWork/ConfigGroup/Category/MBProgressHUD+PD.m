@@ -69,7 +69,7 @@
 }
 
 + (void)showError:(NSString *)error toView:(UIView *)view{
-    [self show:error icon:@"error.png" view:view];
+    [self show:error icon:nil view:view];
 }
 /**
  *  显示提示 + 菊花

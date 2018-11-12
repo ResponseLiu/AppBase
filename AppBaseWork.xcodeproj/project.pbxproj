@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		025B22802199B518009F8020 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 025B227F2199B518009F8020 /* LoginViewController.m */; };
+		025B22832199B605009F8020 /* InputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 025B22822199B605009F8020 /* InputView.m */; };
 		181DF82B2199215400E33157 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 181DF82A2199215400E33157 /* AppDelegate.m */; };
 		181DF82E2199215400E33157 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181DF82D2199215400E33157 /* ViewController.m */; };
 		181DF8312199215400E33157 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181DF82F2199215400E33157 /* Main.storyboard */; };
@@ -92,6 +94,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		025B227E2199B518009F8020 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		025B227F2199B518009F8020 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		025B22812199B605009F8020 /* InputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputView.h; sourceTree = "<group>"; };
+		025B22822199B605009F8020 /* InputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputView.m; sourceTree = "<group>"; };
 		181DF8262199215400E33157 /* AppBaseWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppBaseWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		181DF8292199215400E33157 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		181DF82A2199215400E33157 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -273,6 +279,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		025B227D2199B4F8009F8020 /* 登录 */ = {
+			isa = PBXGroup;
+			children = (
+				025B227E2199B518009F8020 /* LoginViewController.h */,
+				025B227F2199B518009F8020 /* LoginViewController.m */,
+				025B22812199B605009F8020 /* InputView.h */,
+				025B22822199B605009F8020 /* InputView.m */,
+			);
+			path = "登录";
+			sourceTree = "<group>";
+		};
 		181DF81D2199215400E33157 = {
 			isa = PBXGroup;
 			children = (
@@ -576,6 +593,7 @@
 		181DF95821992DBB00E33157 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				025B227D2199B4F8009F8020 /* 登录 */,
 				181DF9672199482B00E33157 /* 资产 */,
 				181DF9662199482900E33157 /* 行情 */,
 				181DF9652199482600E33157 /* 资讯 */,
@@ -714,6 +732,7 @@
 			files = (
 				181DF96D2199496800E33157 /* MarketViewController.m in Sources */,
 				181DF94B21992D2200E33157 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				025B22802199B518009F8020 /* LoginViewController.m in Sources */,
 				181DF9762199499E00E33157 /* PersonalViewController.m in Sources */,
 				181DF8BD219921F800E33157 /* SDWebImageDecoder.m in Sources */,
 				181DF94D21992D2200E33157 /* UIButton+AFNetworking.m in Sources */,
@@ -756,6 +775,7 @@
 				181DF8C3219921F800E33157 /* SDWebImagePrefetcher.m in Sources */,
 				181DF898219921E900E33157 /* MJRefreshGifHeader.m in Sources */,
 				181DF91421992A1400E33157 /* UIButton+Category.m in Sources */,
+				025B22832199B605009F8020 /* InputView.m in Sources */,
 				181DF89B219921E900E33157 /* MJRefreshBackFooter.m in Sources */,
 				181DF8F62199221100E33157 /* NSObject+MJProperty.m in Sources */,
 				181DF8BE219921F800E33157 /* UIImageView+HighlightedWebCache.m in Sources */,
@@ -935,6 +955,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = /Users/huowenmeng/Desktop/AppBaseWork/AppBaseWork/ConfigGroup/ProjectHeader.h;
 				INFOPLIST_FILE = AppBaseWork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -954,6 +975,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = /Users/huowenmeng/Desktop/AppBaseWork/AppBaseWork/ConfigGroup/ProjectHeader.h;
 				INFOPLIST_FILE = AppBaseWork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
