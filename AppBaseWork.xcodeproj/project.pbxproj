@@ -933,7 +933,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DXF77GBV7E;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/apple/Desktop/AppBaseWork/AppBaseWork/ConfigGroup/ProjectHeader.h;
+				GCC_PREFIX_HEADER = /Users/huowenmeng/Desktop/AppBaseWork/AppBaseWork/ConfigGroup/ProjectHeader.h;
 				INFOPLIST_FILE = AppBaseWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -952,7 +952,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DXF77GBV7E;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/apple/Desktop/AppBaseWork/AppBaseWork/ConfigGroup/ProjectHeader.h;
+				GCC_PREFIX_HEADER = /Users/huowenmeng/Desktop/AppBaseWork/AppBaseWork/ConfigGroup/ProjectHeader.h;
 				INFOPLIST_FILE = AppBaseWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
