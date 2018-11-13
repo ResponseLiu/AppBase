@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navi.left.hidden = YES;
      self.navi.middle.title = @"行情";
     // Do any additional setup after loading the view.
 }

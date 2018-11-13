@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
      self.navi.middle.title = @"我的";
+     self.navi.left.hidden = YES;
     // Do any additional setup after loading the view.
 }
 

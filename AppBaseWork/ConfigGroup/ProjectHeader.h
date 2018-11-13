@@ -8,6 +8,7 @@
 
 #ifndef ProjectHeader_h
 #define ProjectHeader_h
+#define BaseUrl   @"http://hytzfl.vip/"
 #define JCLWIDTH [UIScreen mainScreen].bounds.size.width
 #define JCLHEIGHT [UIScreen mainScreen].bounds.size.height
 #import "JCLHttps.h"
@@ -20,6 +21,8 @@
 #import "UIButton+Category.h"
 #import "UserData.h"
 #import "MBProgressHUD+PD.h"
+#import "MJExtension.h"
+#import "UIImageView+WebCache.h"
 #define PreRead(key) [[NSUserDefaults standardUserDefaults] objectForKey:key]
 #define PreWrite(value, key) [[NSUserDefaults standardUserDefaults] setObject:value forKey:key]
 #define CachesFile(value) [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:value]

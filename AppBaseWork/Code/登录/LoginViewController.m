@@ -24,7 +24,7 @@
     self.table.hidden = YES;
     UIImageView *banner = [JCLKitObj JCLImage:self.view];
     banner.frame = CGRectMake(JCLWIDTH/2-35*JCLWIDTH/375, 100*JCLWIDTH/375, 70*JCLWIDTH/375, 70*JCLWIDTH/375);
-    banner.image = [UIImage imageNamed:@"AppIcon"];
+    banner.image = [UIImage imageNamed:@"icon-60的副本"];
     [self.view addSubview:self.username];
     [self.view addSubview:self.secure];
     [self.view addSubview:self.tap_lab];
@@ -46,11 +46,22 @@
             [MBProgressHUD showError:@"请输入密码!"];
             return;
         }
+//        13028904306
+//        a123456
        [MBProgressHUD showMessage:@"登录中..."];
-        [JCLHttps getJson:[NSString stringWithFormat:@"http://www.baidu.com"] success:^(id obj) {
-            
+        [JCLHttps getJson:[NSString stringWithFormat:@"%@app/login?telphone=%@&password=%@",BaseUrl,self.username.input_field.text,self.secure.input_field.text] success:^(id obj) {
+            NSLog(@"%@",obj);
             [MBProgressHUD hideHUD];
-            [UIApplication sharedApplication].keyWindow.rootViewController =[[JCLTabBarList alloc]init];
+            if ([obj[@"code"]intValue]==200) {
+                
+                UserData *data = [UserData mj_objectWithKeyValues:obj[@"data"]];
+                [UserData saveUserInfo:data];
+                [MBProgressHUD showSuccess:obj[@"msg"]];
+                [UIApplication sharedApplication].keyWindow.rootViewController =[[JCLTabBarList alloc]init];
+            }else{
+                
+                 [MBProgressHUD showError:obj[@"msg"]];
+            }
         }];
     }];
     // Do any additional setup after loading the view.
@@ -61,7 +72,11 @@
         
         _username = [[InputView alloc]initWithFrame:CGRectMake(40*JCLWIDTH/375, JCLHEIGHT/2-100*JCLWIDTH/375, JCLWIDTH-80*JCLWIDTH/375, 65*JCLWIDTH/375)];
         _username.text_lab.text = @"用户名";
-        _username.input_field.placeholder = @"请输入用户名";
+        NSAttributedString *attrString = [[NSAttributedString alloc] initWithString:@"请输入用户名" attributes:
+                                          @{NSForegroundColorAttributeName:JCLRGBA(200, 200, 200, 1),
+                                            NSFontAttributeName: _username.input_field.font
+                                            }];
+        _username.input_field.attributedPlaceholder = attrString;
         _username.backgroundColor = [UIColor clearColor];
         
     }
@@ -74,7 +89,11 @@
         
         _secure = [[InputView alloc]initWithFrame:CGRectMake(40*JCLWIDTH/375, self.username.maxY+20*JCLWIDTH/375, JCLWIDTH-80*JCLWIDTH/375, 60*JCLWIDTH/375)];
         _secure.text_lab.text = @"密码";
-        _secure.input_field.placeholder = @"请输入密码";
+        NSAttributedString *attrString = [[NSAttributedString alloc] initWithString:@"请输入密码" attributes:
+                                          @{NSForegroundColorAttributeName:JCLRGBA(200, 200, 200, 1),
+                                            NSFontAttributeName: _secure.input_field.font
+                                            }];
+        _secure.input_field.attributedPlaceholder = attrString;
         _secure.input_field.secureTextEntry = YES;
         _secure.backgroundColor = [UIColor clearColor];
         
@@ -87,7 +106,7 @@
     if (!_tap_lab) {
         
         _tap_lab = [JCLKitObj JCLLable:self.view font:16*JCLWIDTH/375 color:JCLRGBA(255, 255, 255, 1) alignment:1];
-        _tap_lab.backgroundColor = [UIColor blueColor];
+        _tap_lab.backgroundColor = JCLRGBA(40, 69, 138, 1);
         _tap_lab.frame = CGRectMake(40*JCLWIDTH/375, self.secure.maxY+40*JCLWIDTH/375, JCLWIDTH-80*JCLWIDTH/375, 45*JCLWIDTH/375);
         _tap_lab.text = @"确定";
     }

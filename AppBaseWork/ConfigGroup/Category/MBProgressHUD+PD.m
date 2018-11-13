@@ -57,7 +57,7 @@
  */
 + (void)showSuccess:(NSString *)success toView:(UIView *)view
 {
-    [self show:success icon:@"success.png" view:view];
+    [self show:success icon:nil view:view];
 }
 
 /**

@@ -15,7 +15,7 @@ static AFHTTPSessionManager *session;
     if (!session) {
         session = [AFHTTPSessionManager manager];
         session.requestSerializer = [AFHTTPRequestSerializer serializer];
-        session.requestSerializer.timeoutInterval = 10;
+        session.requestSerializer.timeoutInterval = 30;
         session.responseSerializer = [AFHTTPResponseSerializer serializer];
     }
     return session;
