@@ -745,6 +745,10 @@
 		181DF9672199482B00E33157 /* 资产 */ = {
 			isa = PBXGroup;
 			children = (
+				18A9D219219C2244001BD9E8 /* 转换 */,
+				18A9D218219C223E001BD9E8 /* 存取 */,
+				18A9D217219C222F001BD9E8 /* 转出 */,
+				18A9D216219C21BA001BD9E8 /* 充值 */,
 				18A9D1E8219BA624001BD9E8 /* 币种详情 */,
 				181DF9682199494900E33157 /* AccountViewController.h */,
 				181DF9692199494900E33157 /* AccountViewController.m */,
@@ -781,6 +785,34 @@
 				18A9D214219C062C001BD9E8 /* CoinActionView.m */,
 			);
 			path = "币种详情";
+			sourceTree = "<group>";
+		};
+		18A9D216219C21BA001BD9E8 /* 充值 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "充值";
+			sourceTree = "<group>";
+		};
+		18A9D217219C222F001BD9E8 /* 转出 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "转出";
+			sourceTree = "<group>";
+		};
+		18A9D218219C223E001BD9E8 /* 存取 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "存取";
+			sourceTree = "<group>";
+		};
+		18A9D219219C2244001BD9E8 /* 转换 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "转换";
 			sourceTree = "<group>";
 		};
 		18DA2569219A6CFA00A5BE91 /* IQKeyboardManager */ = {

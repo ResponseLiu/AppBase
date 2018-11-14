@@ -46,8 +46,11 @@
             [MBProgressHUD showError:@"请输入密码!"];
             return;
         }
-//        13028904306
+//        13028904306   
 //        a123456
+        
+//        18627074562
+//        aa123456
        [MBProgressHUD showMessage:@"登录中..."];
         [JCLHttps getJson:[NSString stringWithFormat:@"%@app/login?telphone=%@&password=%@",BaseUrl,self.username.input_field.text,self.secure.input_field.text] success:^(id obj) {
             NSLog(@"%@",obj);
