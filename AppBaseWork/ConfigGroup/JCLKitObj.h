@@ -76,4 +76,5 @@
 +(NSString *)base64EncodeString:(NSString *)string;
 +(NSString *)base64DecodeString:(NSString *)string;
 + (NSString *)stringChangeMoneyWithStr:(NSString *)str numberStyle:(NSNumberFormatterStyle)numberStyle;
++(NSString *)timestampSwitchTime:(NSInteger)timestamp andFormatter:(NSString *)format;
 @end

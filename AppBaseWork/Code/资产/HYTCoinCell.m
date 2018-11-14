@@ -35,7 +35,7 @@
         _Aboutprice.text = @"≈1000.00";
         _Aboutprice.frame = CGRectMake(JCLWIDTH-100*JCLWIDTH/375, _price.maxY, 100*JCLWIDTH/375, 20*JCLWIDTH/375);
         
-        UIView *line = [[UIView alloc]initWithFrame:CGRectMake(0, 79, JCLWIDTH, 1)];
+        UIView *line = [[UIView alloc]initWithFrame:CGRectMake(0, 79*JCLWIDTH/375, JCLWIDTH, 1)];
         line.backgroundColor = JCLRGBA(220, 220, 220, 1);
         [self addSubview:line];
     }

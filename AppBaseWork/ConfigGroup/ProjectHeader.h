@@ -23,6 +23,8 @@
 #import "MBProgressHUD+PD.h"
 #import "MJExtension.h"
 #import "UIImageView+WebCache.h"
+#import "JCLColorObj.h"
+
 #define PreRead(key) [[NSUserDefaults standardUserDefaults] objectForKey:key]
 #define PreWrite(value, key) [[NSUserDefaults standardUserDefaults] setObject:value forKey:key]
 #define CachesFile(value) [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:value]
@@ -50,7 +52,6 @@
 
 #define JCLRGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a] // 获取RGB颜色值
 #define JCLBGRGB JCLRGBA(244, 244, 244, 1)
-
-
+#define JCLRGB(r, g, b) JCLRGBA(r, g, b, 1)
 
 #endif /* ProjectHeader_h */
