@@ -36,6 +36,7 @@
         CGFloat x = i*(w+space)+space;
         UILabel *label = self.data[i];
         label.frame = CGRectMake(x, 0, w, 50*JCLWIDTH/375);
+        label.tag =i;
         if (i==0||i==2) {
             
             label.backgroundColor = JCLRGB(81, 141, 220);
@@ -44,6 +45,10 @@
             
             label.backgroundColor = JCLRGB(104, 197, 239);
         }
+        [label tapActionBlock:^{
+          
+            self.tapClick(label.tag);
+        }];
         label.text = _name_Array[i];
     }
 }

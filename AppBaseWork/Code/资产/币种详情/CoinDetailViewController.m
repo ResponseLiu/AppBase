@@ -26,6 +26,12 @@
     self.table.tableHeaderView  = [self Header];
     CoinActionView *action = [[CoinActionView alloc]initWithFrame:CGRectMake(0, JCLHEIGHT-50*JCLWIDTH/375, JCLWIDTH, 50*JCLWIDTH/375)];
     action.name_Array = @[@"充值",@"转出",@"存取",@"转换"];
+    action.tapClick = ^(NSInteger idx) {
+      
+        NSLog(@"%ld",idx);
+        
+        
+    };
     [self.view addSubview:action];
     [JCLHttps getJson:[NSString stringWithFormat:@"%@app/getfund?telphone=%@",BaseUrl,[UserData getUserInfo].username] success:^(id obj) {
        

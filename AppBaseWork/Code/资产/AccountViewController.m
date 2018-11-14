@@ -42,6 +42,7 @@
 }
 -(void)loadData{
     
+    [MBProgressHUD showMessage:@"加载中..."];
     [JCLHttps getJson:[NSString stringWithFormat:@"%@app/getfund?telphone=%@",BaseUrl,[UserData getUserInfo].telphone] success:^(id obj) {
         
         self.header.total_money.text = [NSString stringWithFormat:@"总资产:%g",[obj[@"data"][@"htyStoreNum"] doubleValue] + [obj[@"data"][@"hytNum"] doubleValue]];
@@ -92,10 +93,11 @@
                                             model.price = price;
                                             model.name = name;
                                             [self->_final_data addObject:model];
-                                            
+                                        
                                         }
                                         [self.table reloadData];
                                         [self.table.mj_header endRefreshing];
+                                        [MBProgressHUD hideHUD];
  
                                     }];
 

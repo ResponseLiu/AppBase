@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)UILabel *tap;
 @property(nonatomic,strong)NSMutableArray *data;
 @property(nonatomic,strong)NSArray *name_Array;
+@property(nonatomic,copy)void(^tapClick)(NSInteger idx);
 @end
 
 NS_ASSUME_NONNULL_END
