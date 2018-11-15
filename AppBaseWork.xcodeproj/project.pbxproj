@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		025B22802199B518009F8020 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 025B227F2199B518009F8020 /* LoginViewController.m */; };
 		025B22832199B605009F8020 /* InputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 025B22822199B605009F8020 /* InputView.m */; };
+		02F478AC219DB1D3004E5A2A /* PersonalCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F478AB219DB1D3004E5A2A /* PersonalCenterViewController.m */; };
+		02F478AF219DB3CA004E5A2A /* ChangerPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F478AE219DB3CA004E5A2A /* ChangerPasswordViewController.m */; };
+		02F478B3219DBB3A004E5A2A /* BusinessPartnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F478B2219DBB3A004E5A2A /* BusinessPartnerViewController.m */; };
+		02F478B6219DBB97004E5A2A /* BusinessCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F478B5219DBB97004E5A2A /* BusinessCell.m */; };
+		02F478B9219DBDAD004E5A2A /* BusinessHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F478B8219DBDAD004E5A2A /* BusinessHeader.m */; };
+		02F478BC219DC30C004E5A2A /* TurnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F478BB219DC30C004E5A2A /* TurnViewController.m */; };
 		181DF82B2199215400E33157 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 181DF82A2199215400E33157 /* AppDelegate.m */; };
 		181DF82E2199215400E33157 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181DF82D2199215400E33157 /* ViewController.m */; };
 		181DF8312199215400E33157 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181DF82F2199215400E33157 /* Main.storyboard */; };
@@ -134,6 +140,18 @@
 		025B227F2199B518009F8020 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		025B22812199B605009F8020 /* InputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputView.h; sourceTree = "<group>"; };
 		025B22822199B605009F8020 /* InputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputView.m; sourceTree = "<group>"; };
+		02F478AA219DB1D3004E5A2A /* PersonalCenterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalCenterViewController.h; sourceTree = "<group>"; };
+		02F478AB219DB1D3004E5A2A /* PersonalCenterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalCenterViewController.m; sourceTree = "<group>"; };
+		02F478AD219DB3CA004E5A2A /* ChangerPasswordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangerPasswordViewController.h; sourceTree = "<group>"; };
+		02F478AE219DB3CA004E5A2A /* ChangerPasswordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangerPasswordViewController.m; sourceTree = "<group>"; };
+		02F478B1219DBB3A004E5A2A /* BusinessPartnerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessPartnerViewController.h; sourceTree = "<group>"; };
+		02F478B2219DBB3A004E5A2A /* BusinessPartnerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessPartnerViewController.m; sourceTree = "<group>"; };
+		02F478B4219DBB97004E5A2A /* BusinessCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessCell.h; sourceTree = "<group>"; };
+		02F478B5219DBB97004E5A2A /* BusinessCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessCell.m; sourceTree = "<group>"; };
+		02F478B7219DBDAD004E5A2A /* BusinessHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessHeader.h; sourceTree = "<group>"; };
+		02F478B8219DBDAD004E5A2A /* BusinessHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessHeader.m; sourceTree = "<group>"; };
+		02F478BA219DC30C004E5A2A /* TurnViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TurnViewController.h; sourceTree = "<group>"; };
+		02F478BB219DC30C004E5A2A /* TurnViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TurnViewController.m; sourceTree = "<group>"; };
 		181DF8262199215400E33157 /* AppBaseWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppBaseWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		181DF8292199215400E33157 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		181DF82A2199215400E33157 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -398,6 +416,30 @@
 				025B22822199B605009F8020 /* InputView.m */,
 			);
 			path = "登录";
+			sourceTree = "<group>";
+		};
+		02F478A9219DB1BB004E5A2A /* 个人中心 */ = {
+			isa = PBXGroup;
+			children = (
+				02F478AA219DB1D3004E5A2A /* PersonalCenterViewController.h */,
+				02F478AB219DB1D3004E5A2A /* PersonalCenterViewController.m */,
+				02F478AD219DB3CA004E5A2A /* ChangerPasswordViewController.h */,
+				02F478AE219DB3CA004E5A2A /* ChangerPasswordViewController.m */,
+			);
+			path = "个人中心";
+			sourceTree = "<group>";
+		};
+		02F478B0219DBB22004E5A2A /* 商业伙伴 */ = {
+			isa = PBXGroup;
+			children = (
+				02F478B1219DBB3A004E5A2A /* BusinessPartnerViewController.h */,
+				02F478B2219DBB3A004E5A2A /* BusinessPartnerViewController.m */,
+				02F478B4219DBB97004E5A2A /* BusinessCell.h */,
+				02F478B5219DBB97004E5A2A /* BusinessCell.m */,
+				02F478B7219DBDAD004E5A2A /* BusinessHeader.h */,
+				02F478B8219DBDAD004E5A2A /* BusinessHeader.m */,
+			);
+			path = "商业伙伴";
 			sourceTree = "<group>";
 		};
 		181DF81D2199215400E33157 = {
@@ -730,6 +772,8 @@
 		181DF9632199481F00E33157 /* 我 */ = {
 			isa = PBXGroup;
 			children = (
+				02F478B0219DBB22004E5A2A /* 商业伙伴 */,
+				02F478A9219DB1BB004E5A2A /* 个人中心 */,
 				181DF9742199499E00E33157 /* PersonalViewController.h */,
 				181DF9752199499E00E33157 /* PersonalViewController.m */,
 				18E7CF4B219D5BC000EA3785 /* PersonalCell.h */,
@@ -846,6 +890,8 @@
 		18A9D219219C2244001BD9E8 /* 转换 */ = {
 			isa = PBXGroup;
 			children = (
+				02F478BA219DC30C004E5A2A /* TurnViewController.h */,
+				02F478BB219DC30C004E5A2A /* TurnViewController.m */,
 			);
 			name = "转换";
 			sourceTree = "<group>";
@@ -1023,6 +1069,7 @@
 				181DF94D21992D2200E33157 /* UIButton+AFNetworking.m in Sources */,
 				18DA2594219A6CFA00A5BE91 /* IQNSArray+Sort.m in Sources */,
 				18DA25AA219A9F5D00A5BE91 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
+				02F478AF219DB3CA004E5A2A /* ChangerPasswordViewController.m in Sources */,
 				181DF88F219921E900E33157 /* UIView+MJExtension.m in Sources */,
 				181DF97921994C3E00E33157 /* JCLKitObj.m in Sources */,
 				18DA25B3219AAEBC00A5BE91 /* JCLProgressLayer.m in Sources */,
@@ -1039,6 +1086,7 @@
 				18A9D1EB219BA64B001BD9E8 /* CoinDetailViewController.m in Sources */,
 				181DF8F12199221100E33157 /* MJPropertyType.m in Sources */,
 				181DF8FB2199221100E33157 /* MJFoundation.m in Sources */,
+				02F478B3219DBB3A004E5A2A /* BusinessPartnerViewController.m in Sources */,
 				181DF82E2199215400E33157 /* ViewController.m in Sources */,
 				181DF88A219921E900E33157 /* UIScrollView+MJRefresh.m in Sources */,
 				181DF8C4219921F800E33157 /* SDImageCache.m in Sources */,
@@ -1055,6 +1103,7 @@
 				18E7CF44219D49A800EA3785 /* SaveAndGetViewController.m in Sources */,
 				181DF96A2199494900E33157 /* AccountViewController.m in Sources */,
 				181DF8F32199221100E33157 /* MJProperty.m in Sources */,
+				02F478B9219DBDAD004E5A2A /* BusinessHeader.m in Sources */,
 				18A9D212219BF12A001BD9E8 /* RecordCell.m in Sources */,
 				181DF894219921E900E33157 /* MJRefreshAutoGifFooter.m in Sources */,
 				18A9D209219BB8EE001BD9E8 /* JCLKitModel.m in Sources */,
@@ -1114,6 +1163,7 @@
 				181DF97C21995E6D00E33157 /* UserData.m in Sources */,
 				181DF8392199215600E33157 /* main.m in Sources */,
 				18DA2598219A6CFA00A5BE91 /* IQUIViewController+Additions.m in Sources */,
+				02F478AC219DB1D3004E5A2A /* PersonalCenterViewController.m in Sources */,
 				181DF895219921E900E33157 /* MJRefreshAutoNormalFooter.m in Sources */,
 				181DF8C2219921F800E33157 /* SDWebImageCompat.m in Sources */,
 				181DF8C8219921F800E33157 /* UIView+WebCacheOperation.m in Sources */,
@@ -1121,10 +1171,12 @@
 				181DF95121992D2200E33157 /* AFImageDownloader.m in Sources */,
 				181DF9732199498E00E33157 /* SupMarketViewController.m in Sources */,
 				181DF892219921E900E33157 /* MJRefreshBackNormalFooter.m in Sources */,
+				02F478B6219DBB97004E5A2A /* BusinessCell.m in Sources */,
 				181DF8F82199221100E33157 /* NSString+MJExtension.m in Sources */,
 				181DF94E21992D2200E33157 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				181DF82B2199215400E33157 /* AppDelegate.m in Sources */,
 				18DA2596219A6CFA00A5BE91 /* IQUIScrollView+Additions.m in Sources */,
+				02F478BC219DC30C004E5A2A /* TurnViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1269,7 +1321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LM432R4UD;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/apple/Desktop/AppBaseWork/AppBaseWork/ConfigGroup/ProjectHeader.h;
+				GCC_PREFIX_HEADER = /Users/huowenmeng/Desktop/AppBaseWork/AppBaseWork/ConfigGroup/ProjectHeader.h;
 				INFOPLIST_FILE = AppBaseWork/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1289,7 +1341,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LM432R4UD;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/apple/Desktop/AppBaseWork/AppBaseWork/ConfigGroup/ProjectHeader.h;
+				GCC_PREFIX_HEADER = /Users/huowenmeng/Desktop/AppBaseWork/AppBaseWork/ConfigGroup/ProjectHeader.h;
 				INFOPLIST_FILE = AppBaseWork/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (

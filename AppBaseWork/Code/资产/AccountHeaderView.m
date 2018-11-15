@@ -40,13 +40,13 @@
         text_lab.frame = CGRectMake(0, middle.maxY+30*JCLWIDTH/375, JCLWIDTH, 20);
         
         _total_money = [JCLKitObj JCLLable:self font:16*JCLWIDTH/375 color:JCLRGBA(255, 255, 255, 1) alignment:1];
-        _total_money.text = @"总资产:10000.00";
+        _total_money.text = @"总资产:0.00";
         _total_money.frame = CGRectMake(15*JCLWIDTH/375, text_lab.maxY+25*JCLWIDTH/375, JCLWIDTH/2-20*JCLWIDTH/375, 20*JCLWIDTH/375);
         
         
         
         _not_useMoney = [JCLKitObj JCLLable:self font:16*JCLWIDTH/375 color:JCLRGBA(255, 255, 255, 1) alignment:1];
-        _not_useMoney.text = @"冻结资产:1000.00";
+        _not_useMoney.text = @"冻结资产:0.00";
         _not_useMoney.frame = CGRectMake(JCLWIDTH/2+15*JCLWIDTH/375, text_lab.maxY+25*JCLWIDTH/375, JCLWIDTH/2-20*JCLWIDTH/375, 20*JCLWIDTH/375);
     }
     

@@ -14,6 +14,7 @@
 #import "ChargeViewController.h"
 #import "SendOutViewControllerViewController.h"
 #import "SaveAndGetViewController.h"
+#import "TurnViewController.h"
 @interface CoinDetailViewController ()
 @property(nonatomic,strong)CoinHeaderView *header;
 @property(nonatomic,strong)NSMutableArray *data;
@@ -41,6 +42,11 @@
                 [self.navigationController pushViewController:save animated:YES];
                 
             }else if (idx==1){
+                
+                TurnViewController *save = [[TurnViewController alloc]init];
+                save.model = self.model;
+                save.total_num = [self.header.total_number.text componentsSeparatedByString:@":"][1];
+                [self.navigationController pushViewController:save animated:YES];
                 
             }else if (idx==2){
                 
@@ -76,7 +82,10 @@
                 
             }else if (idx==3){
                 
-                
+                TurnViewController *save = [[TurnViewController alloc]init];
+                save.model = self.model;
+                save.total_num = [self.header.total_number.text componentsSeparatedByString:@":"][1];
+                [self.navigationController pushViewController:save animated:YES];
             }
         }
     };

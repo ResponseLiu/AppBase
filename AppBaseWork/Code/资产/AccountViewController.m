@@ -13,6 +13,7 @@
 #import "AccountModel.h"
 #import "WebViewController.h"
 #import "CoinDetailViewController.h"
+#import "TurnViewController.h"
 @interface AccountViewController ()
 @property(nonatomic,strong)AccountHeaderView *header;
 @property(nonatomic,strong)NSArray *data;
@@ -45,7 +46,10 @@
     [MBProgressHUD showMessage:@"加载中..."];
     [JCLHttps getJson:[NSString stringWithFormat:@"%@app/getfund?telphone=%@",BaseUrl,[UserData getUserInfo].telphone] success:^(id obj) {
         NSLog(@"%@",obj);
-        self.header.total_money.text = [NSString stringWithFormat:@"总资产:%g",[obj[@"data"][@"htyStoreNum"] doubleValue] + [obj[@"data"][@"hytNum"] doubleValue]];
+       double htyStoreNum = [obj[@"data"][@"htyStoreNum"] doubleValue];
+       double hytNum = [obj[@"data"][@"hytNum"] doubleValue];
+       self.header.total_money.text = [NSString stringWithFormat:@"总资产:%g", (hytNum+htyStoreNum) ];
+        
         self.header.not_useMoney.text = [NSString stringWithFormat:@"冻结资产:%@",obj[@"data"][@"hytFrozenNum"]];
         self.data = @[obj[@"data"][@"hytNum"],obj[@"data"][@"btcNum"],obj[@"data"][@"ltcNum"],obj[@"data"][@"ethNum"],obj[@"data"][@"etcNum"],obj[@"data"][@"xrpNum"],obj[@"data"][@"eosNum"]];
         NSArray *name_array = @[@"HYT",@"BTC",@"LTC",@"ETH",@"ETC",@"XRP",@"EOS"];
@@ -158,7 +162,6 @@
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
     
     CoinDetailViewController *detail = [[CoinDetailViewController alloc]init];
     detail.model = self.final_data[indexPath.row];

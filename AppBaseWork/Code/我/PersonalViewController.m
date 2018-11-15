@@ -11,6 +11,8 @@
 #import "PersonalHeader.h"
 #import "AppDelegate.h"
 #import "LoginViewController.h"
+#import "PersonalCenterViewController.h"
+#import "BusinessPartnerViewController.h"
 @interface PersonalViewController ()
 @property(nonatomic,strong)NSArray *data;
 @end
@@ -72,6 +74,16 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     NSString *title = self.data[indexPath.row];
+    if ([title isEqualToString:@"个人中心"]) {
+        
+        PersonalCenterViewController *center = [[PersonalCenterViewController alloc]init];
+        [self.navigationController pushViewController:center animated:YES];
+    }
+    if ([title isEqualToString:@"商业伙伴"]) {
+        
+        BusinessPartnerViewController *center = [[BusinessPartnerViewController alloc]init];
+        [self.navigationController pushViewController:center animated:YES];
+    }
     if ([title isEqualToString:@"退出登录"]) {
         
         UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"友情提示" message:@"您是否要退出账号."
