@@ -44,7 +44,7 @@
     
     [MBProgressHUD showMessage:@"加载中..."];
     [JCLHttps getJson:[NSString stringWithFormat:@"%@app/getfund?telphone=%@",BaseUrl,[UserData getUserInfo].telphone] success:^(id obj) {
-        
+        NSLog(@"%@",obj);
         self.header.total_money.text = [NSString stringWithFormat:@"总资产:%g",[obj[@"data"][@"htyStoreNum"] doubleValue] + [obj[@"data"][@"hytNum"] doubleValue]];
         self.header.not_useMoney.text = [NSString stringWithFormat:@"冻结资产:%@",obj[@"data"][@"hytFrozenNum"]];
         self.data = @[obj[@"data"][@"hytNum"],obj[@"data"][@"btcNum"],obj[@"data"][@"ltcNum"],obj[@"data"][@"ethNum"],obj[@"data"][@"etcNum"],obj[@"data"][@"xrpNum"],obj[@"data"][@"eosNum"]];

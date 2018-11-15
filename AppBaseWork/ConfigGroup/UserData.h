@@ -11,8 +11,17 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UserData : NSObject<NSCoding>
-@property(nonatomic,strong)NSString *createTime;
+
+@property(nonatomic,strong)NSString *btcAddr;
+@property(nonatomic,strong)NSString *ethAddr;
 @property(nonatomic,strong)NSString *hytAddr;
+@property(nonatomic,strong)NSString *ltcAddr;
+@property(nonatomic,strong)NSString *etcAddr;
+@property(nonatomic,strong)NSString *xrpAddr;
+@property(nonatomic,strong)NSString *eosAddr;
+
+
+@property(nonatomic,strong)NSString *createTime;
 @property(nonatomic,strong)NSString *password;
 @property(nonatomic,strong)NSString *telphone;
 @property(nonatomic,strong)NSString *tradePwd;

@@ -120,6 +120,13 @@
 		18DA25AD219AA97800A5BE91 /* AccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DA25AC219AA97800A5BE91 /* AccountModel.m */; };
 		18DA25B0219AAD6000A5BE91 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DA25AF219AAD6000A5BE91 /* WebViewController.m */; };
 		18DA25B3219AAEBC00A5BE91 /* JCLProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DA25B2219AAEBC00A5BE91 /* JCLProgressLayer.m */; };
+		18E7CF32219CFB6900EA3785 /* ChargeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E7CF31219CFB6900EA3785 /* ChargeViewController.m */; };
+		18E7CF41219D3A5400EA3785 /* SendOutViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E7CF40219D3A5400EA3785 /* SendOutViewControllerViewController.m */; };
+		18E7CF44219D49A800EA3785 /* SaveAndGetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E7CF43219D49A800EA3785 /* SaveAndGetViewController.m */; };
+		18E7CF47219D4BB600EA3785 /* SaveHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E7CF46219D4BB600EA3785 /* SaveHeader.m */; };
+		18E7CF4A219D507200EA3785 /* SaveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E7CF49219D507200EA3785 /* SaveCell.m */; };
+		18E7CF4D219D5BC000EA3785 /* PersonalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E7CF4C219D5BC000EA3785 /* PersonalCell.m */; };
+		18E7CF50219D5FCE00EA3785 /* PersonalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E7CF4F219D5FCE00EA3785 /* PersonalHeader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -355,6 +362,20 @@
 		18DA25AF219AAD6000A5BE91 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		18DA25B1219AAEBB00A5BE91 /* JCLProgressLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCLProgressLayer.h; sourceTree = "<group>"; };
 		18DA25B2219AAEBC00A5BE91 /* JCLProgressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCLProgressLayer.m; sourceTree = "<group>"; };
+		18E7CF30219CFB6900EA3785 /* ChargeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChargeViewController.h; sourceTree = "<group>"; };
+		18E7CF31219CFB6900EA3785 /* ChargeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChargeViewController.m; sourceTree = "<group>"; };
+		18E7CF3F219D3A5400EA3785 /* SendOutViewControllerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SendOutViewControllerViewController.h; sourceTree = "<group>"; };
+		18E7CF40219D3A5400EA3785 /* SendOutViewControllerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SendOutViewControllerViewController.m; sourceTree = "<group>"; };
+		18E7CF42219D49A800EA3785 /* SaveAndGetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaveAndGetViewController.h; sourceTree = "<group>"; };
+		18E7CF43219D49A800EA3785 /* SaveAndGetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaveAndGetViewController.m; sourceTree = "<group>"; };
+		18E7CF45219D4BB600EA3785 /* SaveHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaveHeader.h; sourceTree = "<group>"; };
+		18E7CF46219D4BB600EA3785 /* SaveHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaveHeader.m; sourceTree = "<group>"; };
+		18E7CF48219D507200EA3785 /* SaveCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaveCell.h; sourceTree = "<group>"; };
+		18E7CF49219D507200EA3785 /* SaveCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaveCell.m; sourceTree = "<group>"; };
+		18E7CF4B219D5BC000EA3785 /* PersonalCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalCell.h; sourceTree = "<group>"; };
+		18E7CF4C219D5BC000EA3785 /* PersonalCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalCell.m; sourceTree = "<group>"; };
+		18E7CF4E219D5FCE00EA3785 /* PersonalHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalHeader.h; sourceTree = "<group>"; };
+		18E7CF4F219D5FCE00EA3785 /* PersonalHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalHeader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -711,6 +732,10 @@
 			children = (
 				181DF9742199499E00E33157 /* PersonalViewController.h */,
 				181DF9752199499E00E33157 /* PersonalViewController.m */,
+				18E7CF4B219D5BC000EA3785 /* PersonalCell.h */,
+				18E7CF4C219D5BC000EA3785 /* PersonalCell.m */,
+				18E7CF4E219D5FCE00EA3785 /* PersonalHeader.h */,
+				18E7CF4F219D5FCE00EA3785 /* PersonalHeader.m */,
 			);
 			path = "我";
 			sourceTree = "<group>";
@@ -790,6 +815,8 @@
 		18A9D216219C21BA001BD9E8 /* 充值 */ = {
 			isa = PBXGroup;
 			children = (
+				18E7CF30219CFB6900EA3785 /* ChargeViewController.h */,
+				18E7CF31219CFB6900EA3785 /* ChargeViewController.m */,
 			);
 			path = "充值";
 			sourceTree = "<group>";
@@ -797,6 +824,8 @@
 		18A9D217219C222F001BD9E8 /* 转出 */ = {
 			isa = PBXGroup;
 			children = (
+				18E7CF3F219D3A5400EA3785 /* SendOutViewControllerViewController.h */,
+				18E7CF40219D3A5400EA3785 /* SendOutViewControllerViewController.m */,
 			);
 			path = "转出";
 			sourceTree = "<group>";
@@ -804,6 +833,12 @@
 		18A9D218219C223E001BD9E8 /* 存取 */ = {
 			isa = PBXGroup;
 			children = (
+				18E7CF42219D49A800EA3785 /* SaveAndGetViewController.h */,
+				18E7CF43219D49A800EA3785 /* SaveAndGetViewController.m */,
+				18E7CF45219D4BB600EA3785 /* SaveHeader.h */,
+				18E7CF46219D4BB600EA3785 /* SaveHeader.m */,
+				18E7CF48219D507200EA3785 /* SaveCell.h */,
+				18E7CF49219D507200EA3785 /* SaveCell.m */,
 			);
 			path = "存取";
 			sourceTree = "<group>";
@@ -976,8 +1011,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E7CF41219D3A5400EA3785 /* SendOutViewControllerViewController.m in Sources */,
 				181DF96D2199496800E33157 /* MarketViewController.m in Sources */,
 				181DF94B21992D2200E33157 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				18E7CF32219CFB6900EA3785 /* ChargeViewController.m in Sources */,
 				18DA25A9219A9F5D00A5BE91 /* UIView+SDAutoLayout.m in Sources */,
 				025B22802199B518009F8020 /* LoginViewController.m in Sources */,
 				181DF9762199499E00E33157 /* PersonalViewController.m in Sources */,
@@ -992,6 +1029,7 @@
 				181DF94A21992D2200E33157 /* UIRefreshControl+AFNetworking.m in Sources */,
 				18DA25B0219AAD6000A5BE91 /* WebViewController.m in Sources */,
 				181DF893219921E900E33157 /* MJRefreshAutoStateFooter.m in Sources */,
+				18E7CF4D219D5BC000EA3785 /* PersonalCell.m in Sources */,
 				18DA259F219A952C00A5BE91 /* HYTCoinCell.m in Sources */,
 				181DF8F22199221100E33157 /* NSObject+MJKeyValue.m in Sources */,
 				181DF911219929A600E33157 /* JCLKitList.m in Sources */,
@@ -1011,7 +1049,10 @@
 				181DF8F72199221100E33157 /* NSObject+MJClass.m in Sources */,
 				181DF890219921E900E33157 /* MJRefreshBackGifFooter.m in Sources */,
 				181DF900219922CA00E33157 /* UIView+Category.m in Sources */,
+				18E7CF50219D5FCE00EA3785 /* PersonalHeader.m in Sources */,
+				18E7CF47219D4BB600EA3785 /* SaveHeader.m in Sources */,
 				181DF95021992D2200E33157 /* AFAutoPurgingImageCache.m in Sources */,
+				18E7CF44219D49A800EA3785 /* SaveAndGetViewController.m in Sources */,
 				181DF96A2199494900E33157 /* AccountViewController.m in Sources */,
 				181DF8F32199221100E33157 /* MJProperty.m in Sources */,
 				18A9D212219BF12A001BD9E8 /* RecordCell.m in Sources */,
@@ -1040,6 +1081,7 @@
 				181DF8C3219921F800E33157 /* SDWebImagePrefetcher.m in Sources */,
 				181DF898219921E900E33157 /* MJRefreshGifHeader.m in Sources */,
 				181DF91421992A1400E33157 /* UIButton+Category.m in Sources */,
+				18E7CF4A219D507200EA3785 /* SaveCell.m in Sources */,
 				025B22832199B605009F8020 /* InputView.m in Sources */,
 				18DA258E219A6CFA00A5BE91 /* IQTitleBarButtonItem.m in Sources */,
 				18DA25AD219AA97800A5BE91 /* AccountModel.m in Sources */,

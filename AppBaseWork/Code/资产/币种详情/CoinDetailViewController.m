@@ -11,6 +11,9 @@
 #import "CoinHeaderView.h"
 #import "RecordCell.h"
 #import "CoinActionView.h"
+#import "ChargeViewController.h"
+#import "SendOutViewControllerViewController.h"
+#import "SaveAndGetViewController.h"
 @interface CoinDetailViewController ()
 @property(nonatomic,strong)CoinHeaderView *header;
 @property(nonatomic,strong)NSMutableArray *data;
@@ -25,12 +28,57 @@
     self.table.height = JCLHEIGHT - JCLNAVI-50*JCLWIDTH/375;
     self.table.tableHeaderView  = [self Header];
     CoinActionView *action = [[CoinActionView alloc]initWithFrame:CGRectMake(0, JCLHEIGHT-50*JCLWIDTH/375, JCLWIDTH, 50*JCLWIDTH/375)];
-    action.name_Array = @[@"充值",@"转出",@"存取",@"转换"];
+    action.name_Array =[_model.name isEqualToString:@"HYT"]?@[@"存取",@"转换",@"转账"]: @[@"充值",@"转出",@"存取",@"转换"];
     action.tapClick = ^(NSInteger idx) {
       
-        NSLog(@"%ld",idx);
-        
-        
+        if ([self.model.name isEqualToString:@"HYT"]) {
+            
+            if (idx==0) {
+                SaveAndGetViewController *save = [[SaveAndGetViewController alloc]init];
+                save.model = self.model;
+                save.save_num = self.header.save_number.text;
+                save.get_num = self.header.use_number.text;
+                [self.navigationController pushViewController:save animated:YES];
+                
+            }else if (idx==1){
+                
+            }else if (idx==2){
+                
+                
+            }
+        }else{
+            
+            if (idx==0) {
+                
+                if ([self.model.name isEqualToString:@"BTC"]||[self.model.name isEqualToString:@"ETH"]) {
+                    ChargeViewController *charge = [[ChargeViewController alloc]init];
+                    charge.model = self.model;
+                    [self.navigationController pushViewController:charge animated:YES];
+                }else{
+                    
+                    [MBProgressHUD showError:@"暂不支持"];
+                }
+               
+                
+            }else if (idx==1){
+                
+                SendOutViewControllerViewController *sendout = [[SendOutViewControllerViewController alloc]init];
+                sendout.model = self.model;
+                [self.navigationController pushViewController:sendout animated:YES];
+                
+            }else if (idx==2){
+                
+                SaveAndGetViewController *save = [[SaveAndGetViewController alloc]init];
+                save.model = self.model;
+                save.save_num = self.header.save_number.text;
+                save.get_num = self.header.use_number.text;
+                [self.navigationController pushViewController:save animated:YES];
+                
+            }else if (idx==3){
+                
+                
+            }
+        }
     };
     [self.view addSubview:action];
     [JCLHttps getJson:[NSString stringWithFormat:@"%@app/getfund?telphone=%@",BaseUrl,[UserData getUserInfo].username] success:^(id obj) {

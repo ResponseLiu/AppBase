@@ -57,7 +57,7 @@
             [MBProgressHUD hideHUD];
             if ([obj[@"code"]intValue]==200) {
                 
-                UserData *data = [UserData mj_objectWithKeyValues:obj[@"data"]];
+                 UserData *data = [UserData mj_objectWithKeyValues:obj[@"data"]];
                 [UserData saveUserInfo:data];
                 [MBProgressHUD showSuccess:obj[@"msg"]];
                 [UIApplication sharedApplication].keyWindow.rootViewController =[[JCLTabBarList alloc]init];
