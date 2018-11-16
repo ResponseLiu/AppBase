@@ -97,6 +97,10 @@
 		181DF9762199499E00E33157 /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181DF9752199499E00E33157 /* PersonalViewController.m */; };
 		181DF97921994C3E00E33157 /* JCLKitObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 181DF97821994C3E00E33157 /* JCLKitObj.m */; };
 		181DF97C21995E6D00E33157 /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 181DF97B21995E6D00E33157 /* UserData.m */; };
+		18A56A3A219E88A400903807 /* TransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A56A39219E88A400903807 /* TransferViewController.m */; };
+		18A56A3D219E8D2C00903807 /* TransferHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A56A3C219E8D2C00903807 /* TransferHeader.m */; };
+		18A56A40219EA8F100903807 /* TransferRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A56A3F219EA8F100903807 /* TransferRecordViewController.m */; };
+		18A56A43219EAA0200903807 /* TransferRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A56A42219EAA0200903807 /* TransferRecordCell.m */; };
 		18A9D1EB219BA64B001BD9E8 /* CoinDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A9D1EA219BA64B001BD9E8 /* CoinDetailViewController.m */; };
 		18A9D206219BB8CB001BD9E8 /* JCLBaseMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A9D205219BB8CB001BD9E8 /* JCLBaseMenu.m */; };
 		18A9D209219BB8EE001BD9E8 /* JCLKitModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A9D207219BB8EE001BD9E8 /* JCLKitModel.m */; };
@@ -320,6 +324,14 @@
 		181DF97821994C3E00E33157 /* JCLKitObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCLKitObj.m; sourceTree = "<group>"; };
 		181DF97A21995E6D00E33157 /* UserData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
 		181DF97B21995E6D00E33157 /* UserData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserData.m; sourceTree = "<group>"; };
+		18A56A38219E88A400903807 /* TransferViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransferViewController.h; sourceTree = "<group>"; };
+		18A56A39219E88A400903807 /* TransferViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransferViewController.m; sourceTree = "<group>"; };
+		18A56A3B219E8D2C00903807 /* TransferHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransferHeader.h; sourceTree = "<group>"; };
+		18A56A3C219E8D2C00903807 /* TransferHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransferHeader.m; sourceTree = "<group>"; };
+		18A56A3E219EA8F100903807 /* TransferRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransferRecordViewController.h; sourceTree = "<group>"; };
+		18A56A3F219EA8F100903807 /* TransferRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransferRecordViewController.m; sourceTree = "<group>"; };
+		18A56A41219EAA0200903807 /* TransferRecordCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransferRecordCell.h; sourceTree = "<group>"; };
+		18A56A42219EAA0200903807 /* TransferRecordCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransferRecordCell.m; sourceTree = "<group>"; };
 		18A9D1E9219BA64B001BD9E8 /* CoinDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoinDetailViewController.h; sourceTree = "<group>"; };
 		18A9D1EA219BA64B001BD9E8 /* CoinDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoinDetailViewController.m; sourceTree = "<group>"; };
 		18A9D204219BB8CB001BD9E8 /* JCLBaseMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCLBaseMenu.h; sourceTree = "<group>"; };
@@ -814,6 +826,7 @@
 		181DF9672199482B00E33157 /* 资产 */ = {
 			isa = PBXGroup;
 			children = (
+				18A56A37219E643200903807 /* 转账 */,
 				18A9D219219C2244001BD9E8 /* 转换 */,
 				18A9D218219C223E001BD9E8 /* 存取 */,
 				18A9D217219C222F001BD9E8 /* 转出 */,
@@ -835,6 +848,21 @@
 				18DA25B2219AAEBC00A5BE91 /* JCLProgressLayer.m */,
 			);
 			path = "资产";
+			sourceTree = "<group>";
+		};
+		18A56A37219E643200903807 /* 转账 */ = {
+			isa = PBXGroup;
+			children = (
+				18A56A38219E88A400903807 /* TransferViewController.h */,
+				18A56A39219E88A400903807 /* TransferViewController.m */,
+				18A56A3E219EA8F100903807 /* TransferRecordViewController.h */,
+				18A56A3F219EA8F100903807 /* TransferRecordViewController.m */,
+				18A56A41219EAA0200903807 /* TransferRecordCell.h */,
+				18A56A42219EAA0200903807 /* TransferRecordCell.m */,
+				18A56A3B219E8D2C00903807 /* TransferHeader.h */,
+				18A56A3C219E8D2C00903807 /* TransferHeader.m */,
+			);
+			path = "转账";
 			sourceTree = "<group>";
 		};
 		18A9D1E8219BA624001BD9E8 /* 币种详情 */ = {
@@ -1058,6 +1086,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18E7CF41219D3A5400EA3785 /* SendOutViewControllerViewController.m in Sources */,
+				18A56A3A219E88A400903807 /* TransferViewController.m in Sources */,
 				181DF96D2199496800E33157 /* MarketViewController.m in Sources */,
 				181DF94B21992D2200E33157 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				18E7CF32219CFB6900EA3785 /* ChargeViewController.m in Sources */,
@@ -1127,6 +1156,7 @@
 				181DF891219921E900E33157 /* MJRefreshBackStateFooter.m in Sources */,
 				18DA2593219A6CFA00A5BE91 /* IQKeyboardManager.m in Sources */,
 				181DF95321992D2200E33157 /* AFHTTPSessionManager.m in Sources */,
+				18A56A43219EAA0200903807 /* TransferRecordCell.m in Sources */,
 				181DF8C3219921F800E33157 /* SDWebImagePrefetcher.m in Sources */,
 				181DF898219921E900E33157 /* MJRefreshGifHeader.m in Sources */,
 				181DF91421992A1400E33157 /* UIButton+Category.m in Sources */,
@@ -1134,6 +1164,7 @@
 				025B22832199B605009F8020 /* InputView.m in Sources */,
 				18DA258E219A6CFA00A5BE91 /* IQTitleBarButtonItem.m in Sources */,
 				18DA25AD219AA97800A5BE91 /* AccountModel.m in Sources */,
+				18A56A40219EA8F100903807 /* TransferRecordViewController.m in Sources */,
 				181DF89B219921E900E33157 /* MJRefreshBackFooter.m in Sources */,
 				181DF8F62199221100E33157 /* NSObject+MJProperty.m in Sources */,
 				181DF8BE219921F800E33157 /* UIImageView+HighlightedWebCache.m in Sources */,
@@ -1155,6 +1186,7 @@
 				181DF94921992D2200E33157 /* UIProgressView+AFNetworking.m in Sources */,
 				18A9D215219C062C001BD9E8 /* CoinActionView.m in Sources */,
 				181DF89C219921E900E33157 /* MJRefreshAutoFooter.m in Sources */,
+				18A56A3D219E8D2C00903807 /* TransferHeader.m in Sources */,
 				181DF95521992D2200E33157 /* AFURLRequestSerialization.m in Sources */,
 				181DF8C9219921F800E33157 /* UIButton+WebCache.m in Sources */,
 				18A9D20F219BCDB3001BD9E8 /* CoinHeaderView.m in Sources */,
@@ -1321,7 +1353,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LM432R4UD;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/huowenmeng/Desktop/AppBaseWork/AppBaseWork/ConfigGroup/ProjectHeader.h;
+				GCC_PREFIX_HEADER = /Users/apple/Desktop/AppBaseWork/AppBaseWork/ConfigGroup/ProjectHeader.h;
 				INFOPLIST_FILE = AppBaseWork/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1341,7 +1373,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LM432R4UD;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/huowenmeng/Desktop/AppBaseWork/AppBaseWork/ConfigGroup/ProjectHeader.h;
+				GCC_PREFIX_HEADER = /Users/apple/Desktop/AppBaseWork/AppBaseWork/ConfigGroup/ProjectHeader.h;
 				INFOPLIST_FILE = AppBaseWork/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (

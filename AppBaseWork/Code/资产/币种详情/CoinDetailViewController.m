@@ -15,6 +15,7 @@
 #import "SendOutViewControllerViewController.h"
 #import "SaveAndGetViewController.h"
 #import "TurnViewController.h"
+#import "TransferViewController.h"
 @interface CoinDetailViewController ()
 @property(nonatomic,strong)CoinHeaderView *header;
 @property(nonatomic,strong)NSMutableArray *data;
@@ -50,7 +51,10 @@
                 
             }else if (idx==2){
                 
-                
+                TransferViewController *save = [[TransferViewController alloc]init];
+                save.model = self.model;
+                save.use_num = [self.header.use_number.text componentsSeparatedByString:@":"][1];
+                [self.navigationController pushViewController:save animated:YES];
             }
         }else{
             
