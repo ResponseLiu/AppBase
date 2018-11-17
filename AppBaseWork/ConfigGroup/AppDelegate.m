@@ -10,7 +10,8 @@
 #import "JCLTabBarList.h"
 #import "LoginViewController.h"
 #import "IQKeyboardManager.h"
-@interface AppDelegate ()
+#import "AFNetworking.h"
+@interface AppDelegate ()<UIAlertViewDelegate>
 
 @end
 
@@ -32,7 +33,8 @@
         LoginViewController *main = [[LoginViewController alloc] init];
         self.window.rootViewController = main;
     }
-   
+    [self Reconnet];
+    [self CheckNetWorkStatus];
     if (@available(ios 11.0,*)) {
         
         UIScrollView.appearance.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
@@ -59,6 +61,61 @@
     
     keyboardManager.keyboardDistanceFromTextField = 10.0f; // 输入框距离键盘的距离
     return YES;
+}
+-(void)Reconnet{
+    
+    [JCLHttps getJson:@"https://www.baidu.com" success:^(id obj) {
+       
+        
+        
+    }];
+   
+}
+-(void)CheckNetWorkStatus{
+    
+    AFNetworkReachabilityManager *manager = [AFNetworkReachabilityManager sharedManager];
+    [manager startMonitoring];
+    [manager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        switch (status) {
+            case AFNetworkReachabilityStatusUnknown:
+            {
+                //未知网络
+                NSLog(@"未知网络");
+                PreWrite(nil, @"network");
+            }
+                break;
+            case AFNetworkReachabilityStatusNotReachable:
+            {
+                PreWrite(nil, @"network");
+                UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"温馨提示" message:@"连接服务器失败,请重新加载!" delegate:self cancelButtonTitle:@"重新加载" otherButtonTitles:nil, nil];
+                [alert show];
+            }
+                break;
+                
+            case AFNetworkReachabilityStatusReachableViaWWAN:
+            {
+                //手机自带网络
+                NSLog(@"当前使用的是2g/3g/4g网络");
+                PreWrite(@"yes", @"network");
+                [self Reconnet];
+            }
+                break;
+            case AFNetworkReachabilityStatusReachableViaWiFi:
+            {
+                //WIFI
+                NSLog(@"当前在WIFI网络下");
+                PreWrite(@"yes", @"network");
+                [self Reconnet];
+            }
+        }
+    }];
+}
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    
+    if (buttonIndex==0) {
+        
+        [self Reconnet];
+    }
 }
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

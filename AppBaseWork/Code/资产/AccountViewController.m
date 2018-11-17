@@ -129,17 +129,13 @@
        
         ScanLifeViewController *scan = [[ScanLifeViewController alloc]init];
         [self.navigationController pushViewController:scan animated:YES];
-        
     }];
     [Header.code_img tapActionBlock:^{
         
         CodeViewController *scan = [[CodeViewController alloc]init];
-       
         [self.navigationController pushViewController:scan animated:YES];
-        
     }];
     return Header;
-    
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
    

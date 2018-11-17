@@ -213,8 +213,8 @@
     if (!cell) {
         
         cell = [[RecordCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
-        
     }
+    cell.banner.image = [UIImage imageNamed:self.model.name];
     cell.name.hidden = NO;
     cell.number.hidden = NO;
     cell.name.textColor = JCLRGB(30, 30, 30);

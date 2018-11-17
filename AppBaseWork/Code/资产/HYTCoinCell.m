@@ -47,6 +47,7 @@
     self.price.text = [NSString stringWithFormat:@"%g",_model.number];
     self.Aboutprice.text = [NSString stringWithFormat:@"≈ $%g",_model.number*_model.price];
     self.name_lab.text = _model.name;
+    self.banner.image = [UIImage imageNamed:_model.name];
 }
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];

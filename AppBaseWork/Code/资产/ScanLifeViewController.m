@@ -233,13 +233,12 @@ static const float kLineMinY = 185;
         AVMetadataMachineReadableCodeObject *obj = metadataObjects[0];
         
         WebViewController *push = [[WebViewController alloc]init];
-        push.url = obj.stringValue;
+        push.url = [NSString stringWithFormat:@"%@?telPhone=%@",obj.stringValue,[UserData getUserInfo].telphone];
         push.name = @"详情";
         [self.navigationController pushViewController:push animated:YES];
 //        if (self.ScanSuncessBlock) {
 //            self.ScanSuncessBlock(self,obj.stringValue);
 //        }
-        
     }
     else{
         
