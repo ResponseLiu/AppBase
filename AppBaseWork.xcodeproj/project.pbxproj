@@ -108,6 +108,8 @@
 		18A9D20F219BCDB3001BD9E8 /* CoinHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A9D20E219BCDB3001BD9E8 /* CoinHeaderView.m */; };
 		18A9D212219BF12A001BD9E8 /* RecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A9D211219BF12A001BD9E8 /* RecordCell.m */; };
 		18A9D215219C062C001BD9E8 /* CoinActionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A9D214219C062C001BD9E8 /* CoinActionView.m */; };
+		18C925C1219FDA6C00701A25 /* CodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C925C0219FDA6C00701A25 /* CodeViewController.m */; };
+		18C925C4219FDBA000701A25 /* CodeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C925C3219FDBA000701A25 /* CodeHeaderView.m */; };
 		18DA258C219A6CFA00A5BE91 /* IQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DA256B219A6CFA00A5BE91 /* IQTextView.m */; };
 		18DA258D219A6CFA00A5BE91 /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DA256F219A6CFA00A5BE91 /* IQToolbar.m */; };
 		18DA258E219A6CFA00A5BE91 /* IQTitleBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DA2571219A6CFA00A5BE91 /* IQTitleBarButtonItem.m */; };
@@ -346,6 +348,10 @@
 		18A9D211219BF12A001BD9E8 /* RecordCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordCell.m; sourceTree = "<group>"; };
 		18A9D213219C062C001BD9E8 /* CoinActionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoinActionView.h; sourceTree = "<group>"; };
 		18A9D214219C062C001BD9E8 /* CoinActionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoinActionView.m; sourceTree = "<group>"; };
+		18C925BF219FDA6C00701A25 /* CodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeViewController.h; sourceTree = "<group>"; };
+		18C925C0219FDA6C00701A25 /* CodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeViewController.m; sourceTree = "<group>"; };
+		18C925C2219FDBA000701A25 /* CodeHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeHeaderView.h; sourceTree = "<group>"; };
+		18C925C3219FDBA000701A25 /* CodeHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeHeaderView.m; sourceTree = "<group>"; };
 		18DA256B219A6CFA00A5BE91 /* IQTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQTextView.m; sourceTree = "<group>"; };
 		18DA256C219A6CFA00A5BE91 /* IQTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQTextView.h; sourceTree = "<group>"; };
 		18DA256E219A6CFA00A5BE91 /* IQUIView+IQKeyboardToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+IQKeyboardToolbar.h"; sourceTree = "<group>"; };
@@ -880,6 +886,10 @@
 				18A9D211219BF12A001BD9E8 /* RecordCell.m */,
 				18A9D213219C062C001BD9E8 /* CoinActionView.h */,
 				18A9D214219C062C001BD9E8 /* CoinActionView.m */,
+				18C925BF219FDA6C00701A25 /* CodeViewController.h */,
+				18C925C0219FDA6C00701A25 /* CodeViewController.m */,
+				18C925C2219FDBA000701A25 /* CodeHeaderView.h */,
+				18C925C3219FDBA000701A25 /* CodeHeaderView.m */,
 			);
 			path = "币种详情";
 			sourceTree = "<group>";
@@ -1140,6 +1150,7 @@
 				181DF88B219921E900E33157 /* MJRefreshConst.m in Sources */,
 				18DA2590219A6CFA00A5BE91 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				18A9D20C219BB99D001BD9E8 /* JCLColorObj.m in Sources */,
+				18C925C1219FDA6C00701A25 /* CodeViewController.m in Sources */,
 				18DA2597219A6CFA00A5BE91 /* IQUIView+Hierarchy.m in Sources */,
 				181DF899219921E900E33157 /* MJRefreshFooter.m in Sources */,
 				18DA2591219A6CFA00A5BE91 /* IQPreviousNextView.m in Sources */,
@@ -1150,6 +1161,7 @@
 				18DA259C219A7BB100A5BE91 /* AccountHeaderView.m in Sources */,
 				181DF8C0219921F800E33157 /* UIImage+GIF.m in Sources */,
 				181DF89A219921E900E33157 /* MJRefreshHeader.m in Sources */,
+				18C925C4219FDBA000701A25 /* CodeHeaderView.m in Sources */,
 				181DF91721992AB100E33157 /* UITableView+Base.m in Sources */,
 				181DF94C21992D2200E33157 /* UIImageView+AFNetworking.m in Sources */,
 				181DF88D219921E900E33157 /* UIScrollView+MJExtension.m in Sources */,

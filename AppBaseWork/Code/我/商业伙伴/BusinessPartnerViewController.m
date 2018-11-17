@@ -18,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navi.middle.title = @"商业伙伴";
+    self.table.height = JCLHEIGHT - JCLNAVI;
     self.table.tableHeaderView = [self Header];
     
     [JCLHttps getJson:[NSString stringWithFormat:@"%@app/getRecommendUsers?telPhone=%@",BaseUrl,[UserData getUserInfo].username] success:^(id obj) {

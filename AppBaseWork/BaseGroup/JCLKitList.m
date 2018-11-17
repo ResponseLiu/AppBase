@@ -49,6 +49,7 @@
 -(void)viewDidLoad{
     
     [super viewDidLoad];
+   
     self.view.backgroundColor = JCLRGBA(255, 255, 255, 1);
     JCLKitNavi *navi = [[JCLKitNavi alloc]initWithFrame:CGRectMake(0, 0, JCLWIDTH, JCLNAVI)]; [self.view addSubview:navi];
     [navi.left addTarget:self action:@selector(leftAction) forControlEvents:UIControlEventTouchUpInside];

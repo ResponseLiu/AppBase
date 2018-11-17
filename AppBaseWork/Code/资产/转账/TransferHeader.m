@@ -27,7 +27,6 @@
         
         _input= [JCLKitObj JCLField:self font:16*JCLWIDTH/375 color:JCLRGB(50, 50, 50) delegate:nil];
         _input.placeholder = @"请输入地址";
-        _input.text = @"63e6d9533c0b6f4c3601993ee7ea8340";
         _input.frame = CGRectMake(wallet.maxX+5*JCLWIDTH/375, line1.maxY, JCLWIDTH-wallet.maxX, 50*JCLWIDTH/375);
         
         UIView *line2 = [[UIView alloc]initWithFrame:CGRectMake(0, wallet.maxY, JCLWIDTH, 1)];

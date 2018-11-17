@@ -14,6 +14,7 @@
 #import "WebViewController.h"
 #import "CoinDetailViewController.h"
 #import "TurnViewController.h"
+#import "CodeViewController.h"
 @interface AccountViewController ()
 @property(nonatomic,strong)AccountHeaderView *header;
 @property(nonatomic,strong)NSArray *data;
@@ -30,10 +31,10 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navi.left.hidden = YES;
     self.navi.middle.title = @"资产";
+    self.navi.left.hidden = YES;
     self.table.tableHeaderView = [self Header];
-     [self loadData];
+    [self loadData];
     [self.table JCLHeaderBlock:^{
        
          [self loadData];
@@ -132,9 +133,8 @@
     }];
     [Header.code_img tapActionBlock:^{
         
-        WebViewController *scan = [[WebViewController alloc]init];
-        scan.url = [NSString stringWithFormat:@"http://hytzfl.vip/fxjz/#/gold/giro0?id=%@&symbol=HYT",[UserData getUserInfo].uid];
-        scan.name = @"二维码";
+        CodeViewController *scan = [[CodeViewController alloc]init];
+       
         [self.navigationController pushViewController:scan animated:YES];
         
     }];
