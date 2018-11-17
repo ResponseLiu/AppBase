@@ -27,9 +27,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navi.middle.title = self.model.name;
-    self.table.height = JCLHEIGHT - JCLNAVI-50*JCLWIDTH/375;
+    self.table.height = JCLSCROLL;
     self.table.tableHeaderView  = [self Header];
-    CoinActionView *action = [[CoinActionView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height-50*JCLWIDTH/375, JCLWIDTH, 50*JCLWIDTH/375)];
+    CoinActionView *action = [[CoinActionView alloc]initWithFrame:CGRectMake(0, JCLHEIGHT-50*JCLWIDTH/375, JCLWIDTH, 50*JCLWIDTH/375)];
     action.name_Array =[_model.name isEqualToString:@"HYT"]?@[@"存取",@"转换",@"转账"]: @[@"充值",@"转出",@"存取",@"转换"];
     action.tapClick = ^(NSInteger idx) {
       

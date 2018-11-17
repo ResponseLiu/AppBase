@@ -32,8 +32,8 @@
 {
     if (!_codeImage)
     {
-        _codeImage=[[UIImageView alloc]initWithFrame:CGRectMake(0,100, 200*JCLWIDTH/375, 200*JCLWIDTH/375)];
-        _codeImage.center = CGPointMake(self.view.center.x, 200*JCLWIDTH/375);
+        _codeImage=[[UIImageView alloc]initWithFrame:CGRectMake(0,100, 250*JCLWIDTH/375, 250*JCLWIDTH/375)];
+        _codeImage.center = self.view.center;
     }
     return _codeImage;
 }

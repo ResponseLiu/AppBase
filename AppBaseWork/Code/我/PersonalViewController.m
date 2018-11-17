@@ -21,7 +21,6 @@
 
 @implementation PersonalViewController
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
      self.navi.middle.title = @"我的";
