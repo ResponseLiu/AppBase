@@ -1,5 +1,5 @@
 //
-//  CodeHeaderView.h
+//  TGViewController.h
 //  AppBaseWork
 //
 //  Created by apple on 2018/11/17.
@@ -10,9 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CodeHeaderView : UIView
-@property(nonatomic,strong)UIImageView *codeImage;
-@property(nonatomic,strong)UILabel *transfer_lab;
+@interface TGViewController : YSTableList
+
 @end
 
 NS_ASSUME_NONNULL_END

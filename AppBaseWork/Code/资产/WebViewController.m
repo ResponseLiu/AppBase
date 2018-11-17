@@ -22,7 +22,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navi.middle.title = self.name;
-    
     UIButton *back = [JCLKitObj JCLButton:self.navi img:@"" size:16 target:self action:@selector(backAction)];
     back.frame = CGRectMake(0, 20, 44, 44);
     
@@ -43,8 +42,6 @@
 -(void)webViewDidFinishLoad:(UIWebView *)webView {
     
     [_progress endLoadProgress];
-   
-    
 }
 
 -(void)backAction{

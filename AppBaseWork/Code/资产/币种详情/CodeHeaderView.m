@@ -14,9 +14,9 @@
     
     if (self=[super initWithFrame:frame]) {
         
-        UILabel *transfer_lab = [JCLKitObj JCLLable:self font:16*JCLWIDTH/375 color:JCLRGBA(30, 30, 30, 1) alignment:1];
-        transfer_lab.text = @"转账";
-        transfer_lab.frame = CGRectMake(0, 0, JCLWIDTH, 50*JCLWIDTH/375);
+        _transfer_lab = [JCLKitObj JCLLable:self font:16*JCLWIDTH/375 color:JCLRGBA(30, 30, 30, 1) alignment:1];
+        _transfer_lab.text = @"转账";
+        _transfer_lab.frame = CGRectMake(0, 0, JCLWIDTH, 50*JCLWIDTH/375);
         UIView *line = [[UIView alloc]initWithFrame:CGRectMake(0, 50*JCLWIDTH/375, JCLWIDTH, 2)];
         line.backgroundColor = [UIColor redColor];
         [self addSubview:line];

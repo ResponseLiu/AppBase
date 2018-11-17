@@ -110,6 +110,9 @@
 		18A9D215219C062C001BD9E8 /* CoinActionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A9D214219C062C001BD9E8 /* CoinActionView.m */; };
 		18C925C1219FDA6C00701A25 /* CodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C925C0219FDA6C00701A25 /* CodeViewController.m */; };
 		18C925C4219FDBA000701A25 /* CodeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C925C3219FDBA000701A25 /* CodeHeaderView.m */; };
+		18C9263921A0067400701A25 /* market in Resources */ = {isa = PBXBuildFile; fileRef = 18C9263821A0067400701A25 /* market */; };
+		18C9263B21A0069200701A25 /* infos in Resources */ = {isa = PBXBuildFile; fileRef = 18C9263A21A0069200701A25 /* infos */; };
+		18C9263F21A00B5600701A25 /* TGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9263E21A00B5500701A25 /* TGViewController.m */; };
 		18DA258C219A6CFA00A5BE91 /* IQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DA256B219A6CFA00A5BE91 /* IQTextView.m */; };
 		18DA258D219A6CFA00A5BE91 /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DA256F219A6CFA00A5BE91 /* IQToolbar.m */; };
 		18DA258E219A6CFA00A5BE91 /* IQTitleBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DA2571219A6CFA00A5BE91 /* IQTitleBarButtonItem.m */; };
@@ -352,6 +355,10 @@
 		18C925C0219FDA6C00701A25 /* CodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeViewController.m; sourceTree = "<group>"; };
 		18C925C2219FDBA000701A25 /* CodeHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeHeaderView.h; sourceTree = "<group>"; };
 		18C925C3219FDBA000701A25 /* CodeHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeHeaderView.m; sourceTree = "<group>"; };
+		18C9263821A0067400701A25 /* market */ = {isa = PBXFileReference; lastKnownFileType = folder; path = market; sourceTree = "<group>"; };
+		18C9263A21A0069200701A25 /* infos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = infos; sourceTree = "<group>"; };
+		18C9263D21A00B5500701A25 /* TGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGViewController.h; sourceTree = "<group>"; };
+		18C9263E21A00B5500701A25 /* TGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGViewController.m; sourceTree = "<group>"; };
 		18DA256B219A6CFA00A5BE91 /* IQTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQTextView.m; sourceTree = "<group>"; };
 		18DA256C219A6CFA00A5BE91 /* IQTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQTextView.h; sourceTree = "<group>"; };
 		18DA256E219A6CFA00A5BE91 /* IQUIView+IQKeyboardToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+IQKeyboardToolbar.h"; sourceTree = "<group>"; };
@@ -479,6 +486,8 @@
 		181DF8282199215400E33157 /* AppBaseWork */ = {
 			isa = PBXGroup;
 			children = (
+				18C9263A21A0069200701A25 /* infos */,
+				18C9263821A0067400701A25 /* market */,
 				181DF95821992DBB00E33157 /* Code */,
 				181DF9082199288100E33157 /* BaseGroup */,
 				181DF8FC2199221A00E33157 /* ConfigGroup */,
@@ -790,6 +799,7 @@
 		181DF9632199481F00E33157 /* 我 */ = {
 			isa = PBXGroup;
 			children = (
+				18C9263C21A00B4300701A25 /* 推广 */,
 				02F478B0219DBB22004E5A2A /* 商业伙伴 */,
 				02F478A9219DB1BB004E5A2A /* 个人中心 */,
 				181DF9742199499E00E33157 /* PersonalViewController.h */,
@@ -932,6 +942,15 @@
 				02F478BB219DC30C004E5A2A /* TurnViewController.m */,
 			);
 			name = "转换";
+			sourceTree = "<group>";
+		};
+		18C9263C21A00B4300701A25 /* 推广 */ = {
+			isa = PBXGroup;
+			children = (
+				18C9263D21A00B5500701A25 /* TGViewController.h */,
+				18C9263E21A00B5500701A25 /* TGViewController.m */,
+			);
+			path = "推广";
 			sourceTree = "<group>";
 		};
 		18DA2569219A6CFA00A5BE91 /* IQKeyboardManager */ = {
@@ -1081,7 +1100,9 @@
 			files = (
 				181DF8362199215600E33157 /* LaunchScreen.storyboard in Resources */,
 				181DF8FA2199221100E33157 /* Info.plist in Resources */,
+				18C9263921A0067400701A25 /* market in Resources */,
 				18DA2592219A6CFA00A5BE91 /* IQKeyboardManager.bundle in Resources */,
+				18C9263B21A0069200701A25 /* infos in Resources */,
 				181DF8332199215600E33157 /* Assets.xcassets in Resources */,
 				181DF88C219921E900E33157 /* MJRefresh.bundle in Resources */,
 				181DF8312199215400E33157 /* Main.storyboard in Resources */,
@@ -1219,6 +1240,7 @@
 				181DF8F82199221100E33157 /* NSString+MJExtension.m in Sources */,
 				181DF94E21992D2200E33157 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				181DF82B2199215400E33157 /* AppDelegate.m in Sources */,
+				18C9263F21A00B5600701A25 /* TGViewController.m in Sources */,
 				18DA2596219A6CFA00A5BE91 /* IQUIScrollView+Additions.m in Sources */,
 				02F478BC219DC30C004E5A2A /* TurnViewController.m in Sources */,
 			);

@@ -9,7 +9,7 @@
 #import "NewsViewController.h"
 
 @interface NewsViewController ()
-
+@property (nonatomic, strong) UIWebView *web;
 @end
 
 @implementation NewsViewController
@@ -18,6 +18,13 @@
     [super viewDidLoad];
      self.navi.middle.title = @"资讯";
     self.navi.left.hidden = YES;
+    self.web = [[UIWebView alloc] init]; [self.view addSubview:self.web];
+    self.web .backgroundColor = [UIColor whiteColor];
+    self.web .frame = CGRectMake(0, JCLNAVI+2, JCLWIDTH, JCLHEIGHT - JCLNAVI);
+    //    [self.web loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"assets/index-info.html" relativeToURL:[[NSBundle mainBundle] bundleURL]]]];
+    
+    NSURLRequest * request = [NSURLRequest requestWithURL:[NSURL URLWithString:[[NSBundle mainBundle] pathForResource:@"index-info" ofType:@"html" inDirectory:@"infos"]]];
+    [self.web loadRequest:request];
     // Do any additional setup after loading the view.
 }
 
