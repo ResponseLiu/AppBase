@@ -18,14 +18,13 @@
 @interface PersonalViewController ()
 @property(nonatomic,strong)NSArray *data;
 @end
-
 @implementation PersonalViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
      self.navi.middle.title = @"我的";
      self.navi.left.hidden = YES;
-     self.data = @[@"个人中心",@"股权资产",@"信用评分",@"小程序",@"推广",@"商业伙伴",@"设置",@"帮助中心",@"关于我们",@"退出登录"];
+     self.data = @[@"个人中心",@"股权资产",@"积分资产",@"信用评分",@"小程序",@"推广",@"商业伙伴",@"设置",@"帮助中心",@"关于我们",@"退出登录"];
      self.table.tableHeaderView = [self Header];
 //     self.table.tableFooterView = [self footer];
     // Do any additional setup after loading the view.
