@@ -23,8 +23,16 @@
     
     [JCLHttps getJson:[NSString stringWithFormat:@"%@app/getRecommendUsers?telPhone=%@",BaseUrl,[UserData getUserInfo].username] success:^(id obj) {
         NSLog(@"%@",obj);
-        self.data = obj[@"data"];
-        [self.table reloadData];
+        if ([obj[@"code"]intValue]==200) {
+            
+            self.data = obj[@"data"];
+            [self.table reloadData];
+            
+        }else{
+            
+            [MBProgressHUD showError:obj[@"msg"]];
+        }
+        
         
         
     }];
@@ -53,10 +61,8 @@
         cell = [[BusinessCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
     }
     NSDictionary *dic = self.data[indexPath.row];
-    cell.account_lab.text = dic[@"telphone"];
-    
-    cell.name_lab.text =[dic[@"realName"] isKindOfClass:[NSNull class]]?@"未填写": [NSString stringWithFormat:@"%@",dic[@"realName"]];
-    
+    cell.account_lab.text = [NSString stringWithFormat:@"%@",dic[@"telphone"]];
+    cell.name_lab.text = [NSString stringWithFormat:@"%@",dic[@"realName"]];
     cell.status_lab.text = [dic[@"qualified"]intValue]==1?@"合适":@"不合格";
     cell.selectionStyle = 0;
     return cell;

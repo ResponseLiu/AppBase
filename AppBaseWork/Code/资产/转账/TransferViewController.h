@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TransferViewController : YSTableList
 @property(nonatomic,strong)AccountModel *model;
 @property(nonatomic,strong)NSString *use_num;
+@property(nonatomic,assign)BOOL is_Remain;
+@property(nonatomic,strong)NSString *wallet_address;
 @end
 
 NS_ASSUME_NONNULL_END

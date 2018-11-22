@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "WebViewController.h"
+#import "AccountModel.h"
 @interface ScanLifeViewController : YSTableList
 
 @property (nonatomic,strong) UIViewController *controller;
-
+@property(nonatomic,strong)AccountModel *model;
 @property (nonatomic, copy) void (^ScanSuncessBlock) (ScanLifeViewController *,NSString *);//扫描结果
 
 

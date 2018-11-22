@@ -128,6 +128,7 @@
     [Header.scan_img tapActionBlock:^{
        
         ScanLifeViewController *scan = [[ScanLifeViewController alloc]init];
+        scan.model = self.final_data[0];
         [self.navigationController pushViewController:scan animated:YES];
     }];
     [Header.code_img tapActionBlock:^{

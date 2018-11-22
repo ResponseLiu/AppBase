@@ -86,6 +86,12 @@
     
     TransferHeader *header = [[TransferHeader alloc]initWithFrame:CGRectMake(0, 0, JCLWIDTH, 280*JCLWIDTH/375)];
     header.hytprice = self.hytprice;
+    if (self.is_Remain==YES) {
+        
+        header.input.text = self.wallet_address;
+        header.input.enabled = NO;
+    }
+    
     header.backgroundColor = JCLRGB(255, 255, 255);
     header.user_num.text = [NSString stringWithFormat:@"可转账数量:%@",_use_num];
     self.header=header;
