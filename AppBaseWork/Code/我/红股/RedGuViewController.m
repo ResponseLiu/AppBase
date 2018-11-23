@@ -20,7 +20,7 @@
     
     self.navi.middle.title = @"红股";
     self.table.height = JCLHEIGHT - JCLNAVI;
-    self.array = @[@"搬砖分红",@"搬砖费",@"算力",@"节点",@"大节点",@"手续费",@"算力费",@"节点手续费",@"大节点手续费",@"消费分红",@"消费算力",@"节点",@"大节点"];
+    self.array = @[@"搬砖分红:",@"搬砖费:",@"算力:",@"节点:",@"大节点:",@"手续费:",@"算力费:",@"节点手续费:",@"大节点手续费:",@"消费分红:",@"消费算力:",@"节点:",@"大节点:"];
     [JCLHttps getJson:[NSString stringWithFormat:@"%@incomeMoney/getBonus?uid=%@",BaseUrl,[UserData getUserInfo].uid] success:^(id obj) {
 
         if ([obj[@"code"]intValue]==200) {
