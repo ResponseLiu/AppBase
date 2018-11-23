@@ -21,13 +21,10 @@
 @property(nonatomic,strong)NSMutableArray *price_Data;
 @property(nonatomic,strong)NSMutableArray *final_data;
 @end
-
 @implementation AccountViewController
 -(void)viewWillAppear:(BOOL)animated{
     
     [super viewWillAppear:YES];
-   
-    
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
