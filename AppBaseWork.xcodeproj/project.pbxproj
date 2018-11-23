@@ -97,6 +97,11 @@
 		181DF9762199499E00E33157 /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181DF9752199499E00E33157 /* PersonalViewController.m */; };
 		181DF97921994C3E00E33157 /* JCLKitObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 181DF97821994C3E00E33157 /* JCLKitObj.m */; };
 		181DF97C21995E6D00E33157 /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 181DF97B21995E6D00E33157 /* UserData.m */; };
+		187DAEBC21A79928009DE495 /* GQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187DAEBB21A79928009DE495 /* GQViewController.m */; };
+		187DAEBF21A799F2009DE495 /* GQHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 187DAEBE21A799F2009DE495 /* GQHeader.m */; };
+		187DAEC221A79DC3009DE495 /* GQCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187DAEC121A79DC3009DE495 /* GQCell.m */; };
+		187DAEC721A7A57E009DE495 /* RedGuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187DAEC621A7A57E009DE495 /* RedGuViewController.m */; };
+		187DAECA21A7A5B6009DE495 /* RedGuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187DAEC921A7A5B6009DE495 /* RedGuCell.m */; };
 		18A56A3A219E88A400903807 /* TransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A56A39219E88A400903807 /* TransferViewController.m */; };
 		18A56A3D219E8D2C00903807 /* TransferHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A56A3C219E8D2C00903807 /* TransferHeader.m */; };
 		18A56A40219EA8F100903807 /* TransferRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A56A3F219EA8F100903807 /* TransferRecordViewController.m */; };
@@ -329,6 +334,16 @@
 		181DF97821994C3E00E33157 /* JCLKitObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCLKitObj.m; sourceTree = "<group>"; };
 		181DF97A21995E6D00E33157 /* UserData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
 		181DF97B21995E6D00E33157 /* UserData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserData.m; sourceTree = "<group>"; };
+		187DAEBA21A79928009DE495 /* GQViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GQViewController.h; sourceTree = "<group>"; };
+		187DAEBB21A79928009DE495 /* GQViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GQViewController.m; sourceTree = "<group>"; };
+		187DAEBD21A799F2009DE495 /* GQHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GQHeader.h; sourceTree = "<group>"; };
+		187DAEBE21A799F2009DE495 /* GQHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GQHeader.m; sourceTree = "<group>"; };
+		187DAEC021A79DC3009DE495 /* GQCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GQCell.h; sourceTree = "<group>"; };
+		187DAEC121A79DC3009DE495 /* GQCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GQCell.m; sourceTree = "<group>"; };
+		187DAEC521A7A57E009DE495 /* RedGuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedGuViewController.h; sourceTree = "<group>"; };
+		187DAEC621A7A57E009DE495 /* RedGuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedGuViewController.m; sourceTree = "<group>"; };
+		187DAEC821A7A5B6009DE495 /* RedGuCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedGuCell.h; sourceTree = "<group>"; };
+		187DAEC921A7A5B6009DE495 /* RedGuCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedGuCell.m; sourceTree = "<group>"; };
 		18A56A38219E88A400903807 /* TransferViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransferViewController.h; sourceTree = "<group>"; };
 		18A56A39219E88A400903807 /* TransferViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransferViewController.m; sourceTree = "<group>"; };
 		18A56A3B219E8D2C00903807 /* TransferHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransferHeader.h; sourceTree = "<group>"; };
@@ -799,6 +814,8 @@
 		181DF9632199481F00E33157 /* 我 */ = {
 			isa = PBXGroup;
 			children = (
+				187DAEC421A7A55A009DE495 /* 红股 */,
+				187DAEB921A79904009DE495 /* 股权 */,
 				18C9263C21A00B4300701A25 /* 推广 */,
 				02F478B0219DBB22004E5A2A /* 商业伙伴 */,
 				02F478A9219DB1BB004E5A2A /* 个人中心 */,
@@ -864,6 +881,30 @@
 				18DA25B2219AAEBC00A5BE91 /* JCLProgressLayer.m */,
 			);
 			path = "资产";
+			sourceTree = "<group>";
+		};
+		187DAEB921A79904009DE495 /* 股权 */ = {
+			isa = PBXGroup;
+			children = (
+				187DAEBA21A79928009DE495 /* GQViewController.h */,
+				187DAEBB21A79928009DE495 /* GQViewController.m */,
+				187DAEBD21A799F2009DE495 /* GQHeader.h */,
+				187DAEBE21A799F2009DE495 /* GQHeader.m */,
+				187DAEC021A79DC3009DE495 /* GQCell.h */,
+				187DAEC121A79DC3009DE495 /* GQCell.m */,
+			);
+			path = "股权";
+			sourceTree = "<group>";
+		};
+		187DAEC421A7A55A009DE495 /* 红股 */ = {
+			isa = PBXGroup;
+			children = (
+				187DAEC521A7A57E009DE495 /* RedGuViewController.h */,
+				187DAEC621A7A57E009DE495 /* RedGuViewController.m */,
+				187DAEC821A7A5B6009DE495 /* RedGuCell.h */,
+				187DAEC921A7A5B6009DE495 /* RedGuCell.m */,
+			);
+			path = "红股";
 			sourceTree = "<group>";
 		};
 		18A56A37219E643200903807 /* 转账 */ = {
@@ -1119,7 +1160,10 @@
 				18E7CF41219D3A5400EA3785 /* SendOutViewControllerViewController.m in Sources */,
 				18A56A3A219E88A400903807 /* TransferViewController.m in Sources */,
 				181DF96D2199496800E33157 /* MarketViewController.m in Sources */,
+				187DAEC221A79DC3009DE495 /* GQCell.m in Sources */,
 				181DF94B21992D2200E33157 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				187DAECA21A7A5B6009DE495 /* RedGuCell.m in Sources */,
+				187DAEBC21A79928009DE495 /* GQViewController.m in Sources */,
 				18E7CF32219CFB6900EA3785 /* ChargeViewController.m in Sources */,
 				18DA25A9219A9F5D00A5BE91 /* UIView+SDAutoLayout.m in Sources */,
 				025B22802199B518009F8020 /* LoginViewController.m in Sources */,
@@ -1141,6 +1185,7 @@
 				181DF8F22199221100E33157 /* NSObject+MJKeyValue.m in Sources */,
 				181DF911219929A600E33157 /* JCLKitList.m in Sources */,
 				181DF88E219921E900E33157 /* NSBundle+MJRefresh.m in Sources */,
+				187DAEC721A7A57E009DE495 /* RedGuViewController.m in Sources */,
 				181DF9622199465500E33157 /* MBProgressHUD+PD.m in Sources */,
 				181DF95C21992DDA00E33157 /* JCLTabBarList.m in Sources */,
 				18A9D1EB219BA64B001BD9E8 /* CoinDetailViewController.m in Sources */,
@@ -1214,6 +1259,7 @@
 				18DA258D219A6CFA00A5BE91 /* IQToolbar.m in Sources */,
 				181DF94F21992D2200E33157 /* UIWebView+AFNetworking.m in Sources */,
 				181DF897219921E900E33157 /* MJRefreshStateHeader.m in Sources */,
+				187DAEBF21A799F2009DE495 /* GQHeader.m in Sources */,
 				181DF8F92199221100E33157 /* MJPropertyKey.m in Sources */,
 				181DF9062199265700E33157 /* JCLHttps.m in Sources */,
 				181DF94921992D2200E33157 /* UIProgressView+AFNetworking.m in Sources */,
@@ -1387,7 +1433,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DXF77GBV7E;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/huowenmeng/Desktop/AppBaseWork/AppBaseWork/ConfigGroup/ProjectHeader.h;
+				GCC_PREFIX_HEADER = /Users/apple/Desktop/AppBaseWork/AppBaseWork/ConfigGroup/ProjectHeader.h;
 				INFOPLIST_FILE = AppBaseWork/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1407,7 +1453,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DXF77GBV7E;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/huowenmeng/Desktop/AppBaseWork/AppBaseWork/ConfigGroup/ProjectHeader.h;
+				GCC_PREFIX_HEADER = /Users/apple/Desktop/AppBaseWork/AppBaseWork/ConfigGroup/ProjectHeader.h;
 				INFOPLIST_FILE = AppBaseWork/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

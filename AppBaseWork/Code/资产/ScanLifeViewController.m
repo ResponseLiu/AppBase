@@ -230,21 +230,48 @@ static const float kLineMinY = 185;
     //扫描结果
     if (metadataObjects.count > 0){
         [self stopSYQRCodeReading];
-        AVMetadataMachineReadableCodeObject *obj = metadataObjects[0];
-        
-        TransferViewController *push = [[TransferViewController alloc]init];
-        push.is_Remain = YES;
-        push.model = self.model;
-        push.wallet_address = [NSString stringWithFormat:@"%@",obj.stringValue];
-        [self.navigationController pushViewController:push animated:YES];
-//        if (self.ScanSuncessBlock) {
-//            self.ScanSuncessBlock(self,obj.stringValue);
-//        }
+        [JCLHttps getJson:[NSString stringWithFormat:@"%@app/getfund?telphone=%@",BaseUrl,[UserData getUserInfo].username] success:^(id obj) {
+            
+            NSLog(@"%@",obj);
+            if ([obj[@"code"]intValue]==200) {
+                
+                if ([self->_model.name isEqualToString:@"HYT"]) {
+                    
+                    AVMetadataMachineReadableCodeObject *object = metadataObjects[0];
+                    
+                    TransferViewController *push = [[TransferViewController alloc]init];
+                    push.is_Remain = YES;
+                    push.model = self.model;
+                    push.use_num = [NSString stringWithFormat:@"%@",obj[@"data"][@"hytNum"]];
+                    push.wallet_address = [self dealHytAddress:object.stringValue];
+                    [self.navigationController pushViewController:push animated:YES];
+                }
+  
+            }
+            
+        }];
     }
     else{
         
     }
 }
+-(NSString *)dealHytAddress:(NSString *)string{
+    
+    NSString *hyt_address;
+    
+    NSString *object = [string componentsSeparatedByString:@"?"][1];
+    NSString *encode_address = [object componentsSeparatedByString:@"="][1];
+    NSLog(@"%@",string);
+    NSLog(@"%@",encode_address);
+    
+    NSString *decode_Str = [encode_address stringByRemovingPercentEncoding];
+    NSData *decode_data = [decode_Str dataUsingEncoding:NSUTF8StringEncoding];
+    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:decode_data options:NSJSONReadingAllowFragments error:nil];
+    NSLog(@"%@",json);
+    hyt_address = [NSString stringWithFormat:@"%@",json[@"id"]];
+    return hyt_address;
+}
+
 #pragma mark 交互事件
 - (void)startReading
 {
