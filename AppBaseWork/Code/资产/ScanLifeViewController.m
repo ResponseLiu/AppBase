@@ -15,7 +15,7 @@
 #import "ScanLifeViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import "SDAutoLayout.h"
-
+#import "TransferViewController.h"
 #define KDeviceFrame [UIScreen mainScreen].bounds
 
 static const float kLineMinY = 185;
@@ -232,9 +232,10 @@ static const float kLineMinY = 185;
         [self stopSYQRCodeReading];
         AVMetadataMachineReadableCodeObject *obj = metadataObjects[0];
         
-        WebViewController *push = [[WebViewController alloc]init];
-        push.url = [NSString stringWithFormat:@"%@?telPhone=%@",obj.stringValue,[UserData getUserInfo].telphone];
-        push.name = @"详情";
+        TransferViewController *push = [[TransferViewController alloc]init];
+        push.is_Remain = YES;
+        push.model = self.model;
+        push.wallet_address = [NSString stringWithFormat:@"%@",obj.stringValue];
         [self.navigationController pushViewController:push animated:YES];
 //        if (self.ScanSuncessBlock) {
 //            self.ScanSuncessBlock(self,obj.stringValue);
